@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h2>My E-commerce</h2>
+        <div style="display: flex; gap: 1rem; align-items: center;">
+            <input type="text" id="search" placeholder="Search products..." />
+            <button id="cart-btn">🛒 Cart</button>
+            <button onclick="window.location.href='wishlist.html'">❤️ Wishlist</button>
+        </div>
+    </header>
+
+
+    <select id="category-filter">
+        <option value="">All Categories</option>
+        </select>
+
+    <section class="products" id="products"></section>
+
+    <div class="pagination">
+        <button id="prev"> Prev</button>
+        <span id="page-info">Page 1</span>
+        <button id="next">Next</button>
+    </div>
+    <script src="https://unpkg.com/infinite-scroll@5/dist/infinite-scroll.pkgd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

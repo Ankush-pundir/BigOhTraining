@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    background-color: #f7f7f7;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+input[type="text"] {
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h4 {
+    margin: 0.5rem 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+button {
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem; }
